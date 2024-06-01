@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+nav{
+    background-color:rgba(0, 0, 0,0.5) ;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0px;
+    width:1520px;
+    padding:20px;
+    z-index:10;
+}
+header a{
+    color:white;
+}
+#logo{
+    color:whitesmoke;
+    font-size:30px;
+    font-weight:700;
+}
+#sign{
+    color:white;
+    padding-right:50px;
+    cursor: pointer;
+    font-size:22px;
+}
+#sign:hover{
+    border:2px solid black;
+    background-color:red;
+    margin-right:40px;
+    padding:4px 10px;
+}
+nav ul{
+    displaY:flex;
+}
+nav ul li{
+    padding:0px 40px;
+    list-style:none;
+    color:white;
+    font-size:18px;
+}
+nav ul li:hover{
+    text-decoration: underline;
+    cursor:pointer;
+    font-size:20px;
+}
+/* head::before{
+    position:absolute;
+    width:100%;
+    height:100%;
+} */
+.first{
+    position:absolute;
+    z-index:-1;
+    width:1520px;
+    height:730px;
+}
+.text1{
+    color:white;
+    padding-top:270px;
+    margin-left:600px;
+}
+#title{
+    font-size:45px;
+    font-weight:600;
+    margin-left:110px;
+}
+.tag{
+    font-size:35px;
+}
+.menubtn{
+    font-size:25px;
+    border-radius:5px;
+    border-color:orangered;
+    margin-left:226px;
+    color:white;
+    background-color:rgba(0,0,0,0.7);
+    padding:6px 15px;
+    cursor: pointer;
+}
+button:hover{
+    background-color:rgba(0, 0, 255,0.5);
+    color:white;
+}
+
+
+/**************** Menu ****************/
+
+#menu 
+{
+    width:1520px;
+    margin-top:328px;
+}
+
+#menu span{
+    display:flex;
+    justify-content:center;
+    font-size:30px;
+    font-weight:600;
+}
+
+/* #menu .part{
+    width:1320px;
+    height:500px;
+    margin-top:20px;
+    margin-left:100px;
+    display:flex;
+    justify-content:space-between; 
+} */
+
+#menu .part{
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+.pa{
+    border:2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px -2px 0px 0px rgba(0,0,0,0.3);
+    width:370px;
+    height:700px;
+    margin:0px 25px;
+}
+.time{
+    background-color:red;
+    margin:4px;
+    padding:10px;
+    color:white;
+    font-size:20px;
+    font-weight:700;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.photo{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+.part img{
+    /* width:100%; */
+    /* height:100%; */
+    /* border-radius:100% */
+    width:150px;
+    height:150px;
+    border-radius:200px;
+    margin-top:20px;
+}
+
+.part .text{
+    margin-top:5px;
+    font-weight:600;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/**************** Chef ****************/
+
+#chef span{
+    font-size:30px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    margin-top:100px;
+}
+
+#chef #chefPhotos{
+    display:flex;
+    align-items:baseline;
+}
+#chef #chefPhotos img{
+    /* width:380px;
+    height:300px; */
+    margin-top:50px;
+}
+#chef img{
+    width:380px;
+}
+.p1{
+    height:340px;
+}
+#chef #chefPhotos .photo1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#chef .photo1 .text{
+    margin-top:7px;
+    font-size:18px;
+    font-weight:500;
+}
+
+/**************** About ****************/
+#about span{
+    margin-top: 100px;
+    font-size:30px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+}
+
+#about .left{
+    /* margin-left:60px; */
+    margin-top: 60px;
+    width:700px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    font-size:18px;
+    line-height: 25px;
+    font-weight:500;
+    line-break:anywhere
+}
+#about .left :first-child{
+    font-size:25px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+#about .part{
+    display:flex;
+    flex-direction:row;
+   justify-content:center;
+    /* justify-content:first baseline; */
+}
+
+#about img{
+    margin-left:200px;
+    height:300px;
+    width:300px;
+}
+
+
+/************ Contact ************/
+
+#contact span{
+    font-size:30px;
+    font-weight:600;
+    display:flex;
+    justify-content:center;
+    margin-top:50px;
+}
+
+#contact .part{
+    display:flex;
+    flex-direction:row; 
+    justify-content:space-around;
+    margin-top:50px;
+}
+
+#contact .left{
+    line-height:30px;
+    font-size:20px;  
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+}
+
+#contact .right{
+    border:2px solid black;
+    background-color:pink;
+    padding:40px 20px;
+    line-height:35px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-weight:600;
+    font-size:22px;
+}
+input{
+    width:400px;
+}
+#contact .te{
+    height:100px;
+    margin-top:10px;
+}
+#contact button{
+    margin-top:13px;
+    padding:7px 15px;
+}
+
+
+.reveal{
+    position:relative;
+    transform:translateY(150px);
+    opacity:0;
+    transition:all 2s ease;
+}
+
+.reveal.active{
+    transform:translateY(0px);
+    opacity:1;
+}
+
+.active#chef{
+    animation:fade-left 2s ease-in-out;
+}
+.active#menu span{
+    transform:rotate(360deg);
+    transition:all 1.5s ease;
+}
+
+.active#about img{
+    transform:rotate(360deg);
+    transition:all 2s ease-in-out;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
